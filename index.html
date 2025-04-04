@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poster PTIT</title>
+    <link rel="icon" type="image/png" href="./img/logoptit.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <nav
+      class="navbar navbar-expand-lg py-4 py-lg-0 m-2 m-sm-3 shadow bg-white rounded fixed-top"
+    >
+      <div class="container-fluid px-4">
+        <img class="img-logo me-auto" src="/img/logoptit.png" alt="LoGo" />
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="top-navbar"
+          aria-labelledby="top-navbarLabel"
+        >
+          <!-- Navigation Bar Content-->
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#top-navbar"
+            aria-controls="top-navbar"
+          >
+            <div class="d-flex justify-content-between p-3">
+              <img class="img-logo" src="/img/logoptit.png" alt="LoGo" />
+              <i class="lni lni-xmark"></i>
+            </div>
+          </button>
+          <ul class="navbar-nav mx-lg-auto p-4 p-lg-0">
+            <li class="nav-item px-3 py-1 py-lg-4">
+              <a class="nav-link active" href="#hero-carousel">Trang chủ</a>
+            </li>
+            <li class="nav-item px-3 py-1 py-lg-4">
+              <a class="nav-link" href="#about">Giới thiệu</a>
+            </li>
+            <li class="nav-item px-3 py-1 py-lg-4">
+              <a class="nav-link" href="#csvc">Cơ sở vật chất</a>
+            </li>
+            <li class="nav-item px-3 py-1 py-lg-4">
+              <a class="nav-link" href="#admission">Thông tin tuyển sinh</a>
+            </li>
+            <li class="nav-item px-3 py-1 py-lg-4">
+              <a class="nav-link" href="#train">Chương trình đào tạo</a>
+            </li>
+            <li class="nav-item px-3 py-1 py-lg-4">
+              <a class="nav-link" href="#contact">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#top-navbar"
+          aria-controls="top-navbar"
+        >
+          <i class="lni lni-menu-hamburger-1"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Slider 1 -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="/img/sl1.jpg" class="d-block w-100 c-img" alt="Slide 1" />
+          <div class="carousel-caption top-1 mt-4">
+            <p class="display-4 fw-bolder text-uppercase">
+              Học viện Công nghệ Bưu chính Viễn thông
+            </p>
+            <h1 class="mt-5 fs-2">
+              Số 1 về Đổi mới sáng tạo theo xếp hạng <br />
+              của Scimago năm 2024
+            </h1>
+            <button
+              class="btn btn-danger px-4 py-2 fs-5 mt-5"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+            >
+              Liên hệ ngay
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="/img/sl2.png" class="d-block w-100 c-img" alt="Slide 2" />
+          <div class="carousel-caption top-1 mt-4">
+            <p class="display-4 fw-bolder text-uppercase">
+              Học viện Công nghệ Bưu chính Viễn thông
+            </p>
+            <h1 class="mt-5 fs-2">
+              Trường trọng điểm quốc gia về<br />
+              kĩ thật, công nghệ
+            </h1>
+            <button
+              class="btn btn-danger px-4 py-2 fs-5 mt-5"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+            >
+              Liên hệ ngay
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="img/sl3.jpeg" class="d-block w-100 c-img" alt="Slide 3" />
+          <div class="carousel-caption top-1 mt-4">
+            <p class="display-4 fw-bolder text-uppercase">
+              Học viện Công nghệ Bưu chính Viễn thông
+            </p>
+            <h1 class="mt-5 fs-2">Hơn 400 đối tác trong và ngoài nước</h1>
+            <button
+              class="btn btn-danger px-4 py-2 fs-5 mt-5"
+              onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+            >
+              Liên hệ ngay
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev ms-5"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next me-5"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Giới thiệu -->
+    <div style="margin-top: 100px" class="container" id="about">
+      <div
+        class="display-6 h6 text-uppercase fw-bolder text-start mt-4 text-black"
+      >
+        Giới thiệu
+      </div>
+      <div class="row g-3">
+        <div class="container col col-lg-6 col-12">
+          <div class="border-line mt-5"></div>
+          <div class="text-uppercase fw-bolder my-3 text-danger">
+            Học viện công nghệ bưu chính viễn thông
+          </div>
+          <div class="text">
+            Học viện với tiền thân là Trường Bưu điện – Vô tuyến điện (1953).
+            Ngày 11/07/1997, thành lập Học viện Công nghệ Bưu chính Viễn thông
+            trên cơ sở sắp xếp lại 4 đơn vị thành viên của Tổng công ty Bưu
+            chính Viễn thông Việt Nam. Học viện là trường dẫn trong các lĩnh vực
+            công nghệ then chốt, mũi nhọn trong thời đại kỷ nguyên số với nhiều
+            chương trình đào tạo công nghệ số như Công nghệ thông tin, Điện tử,
+            Viễn thông, Trí tuệ nhân tạo, Vi mạch bán dẫn, An toàn thông tin,
+            Khoa học Máy tính, Kỹ thuật dữ liệu cũng như các mới nổi như Công
+            nghệ Đa phương tiện, Công nghệ tài chính, Thiết kế và Phát triển
+            Game, Công nghệ Internet Vạn vật, Truyền thông Đa phương tiện …
+          </div>
+        </div>
+        <div class="container col col-lg-6 col-12">
+          <div class="container custom-container mt-4">
+            <div class="row">
+              <!-- Ảnh lớn bên trái -->
+              <div class="col-md-6">
+                <img
+                  src="https://ptit.edu.vn/wp-content/uploads/2024/09/banner1-1-e1727438597675.webp"
+                  class="img-large"
+                  alt="Ảnh lớn"
+                />
+              </div>
+              <!-- Ảnh nhỏ bên phải -->
+              <div class="col-md-6 d-flex align-items-center">
+                <img
+                  src="https://ptit.edu.vn/wp-content/uploads/2024/09/banner2.webp"
+                  class="img-small"
+                  alt="Ảnh nhỏ"
+                />
+              </div>
+            </div>
+            <!-- Logo tròn ở giữa -->
+            <img
+              src="https://ptit.edu.vn/wp-content/uploads/2024/09/circle-ptit-2.webp"
+              class="logo-overlay rounded-circle"
+              alt="Logo"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cơ sở vật chất -->
+    <div class="container-fluid mx-auto bg-danger py-3 my-4" id="csvc">
+      <div class="container text-center">
+        <div
+          class="display-6 h6 text-uppercase fw-bolder text-start my-4 text-white"
+        >
+          Cơ sở vật chất
+        </div>
+
+        <div class="button-container">
+          <div
+            class="image-button"
+            onclick="changeContent('Tòa A1: Là khu vực làm việc của lãnh đạo học viện, Phòng GV, phòng CT & CTSV,  TT KT&ĐBCLGD và các Viện/Phòng/Trung tâm chức năng. Là nơi tập trung nhiều có nhiều trang thiết bị hiện đại và đa dạng nhất học viện. Có nhiều phòng ban nghiên cứu như Trung tâm đào tạo quốc tế CIE, CDIT.','./img/p2.jpg')"
+          >
+            <img src="./img/p2.jpg" alt="Ảnh 1" />
+          </div>
+          <div
+            class="image-button"
+            onclick="changeContent('Tòa A2 và hội trường: A2 là khu vực đào tạo chính của học viện với rất nhiều phòng học. Các phòng được đều được trang bị các thiết bị hiện đại phục vụ cho việc học của sinh viên. Cùng với các phòng học thì nơi đây cũng là nơi đặt các văn phòng các Khoa, Bộ môn và Khoa ĐTSĐH. Đến với hội trường thì là nơi tổ chức các sự kiện có quy mô lớn trong học viện, đảm bảo được cả về số lượng người cũng như chất lượng thiết bị tốt nhất','./img/p2.jpg')"
+          >
+            <img src="./img/p2.jpg" alt="Ảnh 2" />
+          </div>
+          <div
+            class="image-button"
+            onclick="changeContent('Tòa A3: Là khu vực cung cấp các phòng học chất lượng cũng như các phòng thực hành thí nghiệm của học viện. Các phòng thực hành thí nghiệm được cung cấp rất nhiều trang máy tính hiện đại cũng như các thiết bị máy móc tiên tiến phục vụ cho khoa điện tử. Tòa A3 bao gồm cả thư viện phục vụ cho sinh viên với rất nhiều đầu sách.','./img/p2.jpg')"
+          >
+            <img src="./img/p2.jpg" alt="Ảnh 3" />
+          </div>
+          <div
+            class="image-button"
+            onclick="changeContent('Văn phòng một cửa : Là nơi giải quyết các thủ tục hành chính thông thường liên quan tới quá trình tuyển sinh và tổ chức đào tạo tại Cơ sở Hà Đông, Học viện Công nghệ Bưu chính Viễn thông tổ chức, bố trí Bộ phận “một cửa” để tiếp, làm việc với thí sinh, sinh viên (HSSV) theo “cơ chế một cửa”.\nThời gian tiếp, làm việc: Các ngày làm việc: buổi sáng từ 8h30 đến 11h30; Buổi chiều từ 14h00 tới 16h30, ngoài giờ hành chính: 09h00 đến 11h00, ngày thứ 7 hàng tuần (bộ phận Kế toán)','./img/p2.jpg')"
+          >
+            <img src="./img/p2.jpg" alt="Ảnh 4" />
+          </div>
+          <div
+            class="image-button"
+            onclick="changeContent('Căn tin: Nơi cung cấp những món ăn đầy dinh dưỡng và chất lượng phục vụ cho việc học cả ngày của sinh viên được đảm bảo. Căn tin được dọn dẹp và phục vụ trong tình trạng tốt nhất.','./img/p2.jpg')"
+          >
+            <img src="./img/p2.jpg" alt="Ảnh 5" />
+          </div>
+          <div
+            class="image-button"
+            onclick="changeContent('KTX: Nơi cung cấp chỗ nghỉ cho sinh viên học viện, những sinh viên mong muốn được ở ngay tại trường. Đảm bảo đầy đủ trang thiết bị thiết yếu phục vụ cuộc sống của sinh viên','./img/p2.jpg')"
+          >
+            <img src="./img/p2.jpg" alt="Ảnh 6" />
+          </div>
+          <div
+            class="image-button"
+            onclick="changeContent('P Coffee: Phục vụ các yêu cầu về đồ ăn nghe cùng đồ uống cho sinh viên và giảng viên trong trường trong thời gian nghỉ. Với menu đa dạng P Coffee cung cấp đầy đủ mọi sở thích về đồ uống cho tất cả mọi người.','./img/p2.jpg')"
+          >
+            <img src="./img/p2.jpg" alt="Ảnh 7" />
+          </div>
+        </div>
+        <div id="content-div" class="content-box border my-3 row">
+          <div class="col-5">
+            <img
+              id="content-image"
+              class="content-image"
+              src=""
+              alt="Ảnh nội dung"
+            />
+          </div>
+          <div id="content-text" class="col-7 content-text my-3"></div>
+        </div>
+      </div>
+    </div>
+    <!-- thông tin tuyển sinh -->
+    <div style="margin-top: 100px" class="container" id="admission">
+      <div
+        class="display-6 h6 text-uppercase fw-bolder text-start mt-4 text-black"
+      >
+        thông tin tuyển sinh
+      </div>
+      <div class="row g-3 my-3">
+        <div class="container col col-lg-6 col-12 mt-3">
+          <div class="text">
+            Học viện Công nghệ Bưu chính Viễn thông sử dụng 04 phương thức tuyển
+            sinh để thực hiện xét tuyển vào đại học hệ chính quy bao gồm: Tuyển
+            thẳng và ưu tiên xét tuyển, Xét tuyển dựa vào kết quả điểm thi tốt
+            nghiệp THPT năm 2023, Xét tuyển kết hợp giữa một trong các loại
+            Chứng chỉ quốc tế hoặc Thành tích cá nhân trong các kỳ thi tuyển
+            chọn học sinh giỏi hoặc Thành tích học tập tại các trường THPT
+            chuyên với kết quả học tập ở bậc THPT Xét tuyển dựa vào kết quả các
+            kỳ thi đánh giá năng lực, đánh giá tư duy. <br />
+            <br />
+            Các ngành tuyển sinh: Kỹ thuật Điện tử viễn thông, Công nghệ Kỹ
+            thuật Điện, điện tử, Công nghệ thông tin, An toàn thông tin, Khoa
+            học máy tính, Công nghệ đa phương tiện, Truyền thông đa phương tiện,
+            Báo chí, Quản trị kinh doanh, Thương mại điện tử, Marketing, Kế
+            toán, Công nghệ tài chính (Fintech), Công nghệ thông tin (Chất lượng
+            cao), Marketing (Chất lượng cao), Kế toán (chuẩn quốc tế ACCA)
+          </div>
+        </div>
+        <div class="container col col-lg-6 col-12">
+          <div class="container custom-container mt-4">
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-touch="true"
+              data-bs-interval="5000"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://tuyensinh.ptit.edu.vn/wp-content/uploads/sites/4/2024/08/image-banner-3-1.png"
+                    class="d-block w-100"
+                    alt="Slide 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://tuyensinh.ptit.edu.vn/wp-content/uploads/sites/4/2024/08/image-banner-4-1.png"
+                    class="d-block w-100"
+                    alt="Slide 2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- chương trình đào tạo -->
+    <div class="container-fluid mx-auto py-3 my-4" id="train">
+      <div class="header container row">
+        <div class="col-md-6 image-container">
+          <div
+            class="display-6 h6 text-uppercase fw-bolder text-start my-4 text-white"
+          >
+            Chương trình đào tạo
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4 class="text-content">
+            Tri thức - Sáng tạo - Đạo đức - Trách nhiệm
+          </h4>
+          <p class="text-content">
+            Là phương châm xuyên suốt định hướng cho các hoạt động đào tạo,
+            nghiên cứu của Học viện hướng tới mục tiêu đào tạo ra những con
+            người "vừa có tài vừa có đức" để đóng góp cho sự phát triển chung
+            của ngành, của đất nước, của nhân loại.
+          </p>
+        </div>
+      </div>
+      <div class="section container">
+        <div class="row text-white text-center">
+          <div class="col-md-4">
+            <div class="card-custom">
+              <i class="bi bi-mortarboard"></i>
+              <p class="text-train">
+                Học viện đưa ra chương trình đào tạo được thực hiện trong 4,5
+                năm gồm 9 học kỳ: có 8 học kỳ tích lũy kiến thức tại Học viện và
+                1 kỳ thực tập chuyên sâu và thực tập thực tế tại cơ sở (đối với
+                các ngành CNTT, CNKT Đ-ĐT, KT ĐTVT, ATTT, CNĐPT, KT ĐK&TĐH)
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-custom">
+              <i class="bi bi-gear"></i>
+              <p class="text-train">
+                Và 4 năm gồm 8 học kỳ: có 7 học kỳ tích lũy kiến thức tại Học
+                viện và 1 kỳ thực tập chuyên sâu và thực tập thực tế tại cơ sở
+                (đối với các ngành QTKD, Kế toán, Marketing, TT ĐPT, TMĐT, CN
+                Tài chính).
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-custom">
+              <i class="bi bi-globe"></i>
+              <p class="text-train">
+                Ngoài hệ Đại học chính quy, Học viện còn có các hệ đào tạo khác:
+                Hệ liên kết quốc tế, Hệ đào tạo bằng Tiếng Anh; Hệ văn bằng 2;
+                Hệ Sau đại học ,hệ Vừa làm vừa học, Hệ Đại học theo hình thức
+                giáo dục từ xa...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Gallery -->
+    <div class="container-fluid">
+      <div class="container mt-5 mx-auto">
+        <div class="display-6 h6 text-uppercase fw-bolder text-start my-4">
+          Hình ảnh PTIT
+        </div>
+        <div class="row g-3">
+          <div class="col-12 col-lg-6 pic-container">
+            <div class="card-pic lagre">
+              <img
+                style="max-width: 100%"
+                src="https://ptit.edu.vn/wp-content/uploads/2024/09/anhbotruongchidao.webp"
+                class="card-img-top"
+                alt="Coffee 1"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="row pic-container g-3">
+              <div class="col-6">
+                <div class="card-pic">
+                  <img
+                    src="https://ptit.edu.vn/wp-content/uploads/2024/09/SV-4.webp"
+                    class="card-img-top"
+                    alt="Coffee 2"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-pic">
+                  <img
+                    src="https://ptit.edu.vn/wp-content/uploads/2024/09/anh-sv-themmoi-2.jpg"
+                    class="card-img-top"
+                    alt="Coffee 3"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-pic">
+                  <img
+                    src="https://ptit.edu.vn/wp-content/uploads/2024/09/SV-3.webp"
+                    class="card-img-top"
+                    alt="Coffee 4"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="card-pic">
+                  <img
+                    src="https://ptit.edu.vn/wp-content/uploads/2024/09/anh-sv-themmoi-1.jpg"
+                    class="card-img-top"
+                    alt="Coffee 5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="gallery-modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img class="modal-img" src="/img/image1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Liên hệ -->
+    <div class="container py-5" id="contact">
+      <div
+        class="display-6 h6 text-uppercase fw-bolder text-start mt-4 text-black"
+      >
+        Liên hệ
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="icon">📍</div>
+            <h5 class="card-title mt-3">Trụ sở chính</h5>
+            <p>122, Hoàng Quốc Việt, Cầu Giấy, Hà Nội</p>
+            <p>Điện thoại: 024.37562186</p>
+            <p>Fax: 024.37562036</p>
+            <p>Website: www.ptit.edu.vn</p>
+            <p>Email: vanphonghv@ptit.edu.vn</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="icon">🏫</div>
+            <h5 class="card-title mt-3">Cơ sở đào tạo Hà Nội</h5>
+            <p>Km10, Đường Nguyễn Trãi, Hà Đông, Hà Nội</p>
+            <p>Điện thoại: 024.38544451</p>
+            <p>Fax: 024.33829236</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="icon">🏢</div>
+            <h5 class="card-title mt-3">Cơ sở đào tạo TP. Hồ Chí Minh</h5>
+            <p>Số 11, Nguyễn Đình Chiểu, Quận 1, TP. Hồ Chí Minh</p>
+            <p>Điện thoại: 028.38295258</p>
+            <p>Fax: 028.39105510</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fooder -->
+    <div>
+      <footer class="footer">
+        <div class="logo">
+          <img
+            src="https://ptit.edu.vn/wp-content/uploads/2023/06/logo-footer-svg.svg"
+            alt="Logo PTIT"
+          />
+        </div>
+        <div class="footer-container mt-5">
+          <div class="footer-column">
+            <p>Số điện thoại liên hệ: 024 3756 2186</p>
+            <p>Email: ctsv@ptit.edu.vn</p>
+            <h3>Đường dẫn liên kết</h3>
+            <p>Bộ Khoa học và Công nghệ</p>
+            <p>Viện Khoa học Kỹ thuật Bưu điện</p>
+            <p>Viện Kinh tế Bưu điện</p>
+            <p>Viện Công nghệ Thông tin và Truyền thông CDIT</p>
+          </div>
+          <div class="footer-column">
+            <h3>Trụ sở chính</h3>
+            <p>122 Hoàng Quốc Việt, Q. Cầu Giấy, Hà Nội</p>
+            <h3>Cơ sở đào tạo tại Hà Nội</h3>
+            <p>Km10, Đường Nguyễn Trãi, Q. Hà Đông, Hà Nội</p>
+          </div>
+          <div class="footer-column">
+            <h3>Học viện cơ sở tại TP. Hồ Chí Minh</h3>
+            <p>11 Nguyễn Đình Chiểu, P. Đa Kao, Q.1 TP Hồ Chí Minh</p>
+            <h3>Cơ sở đào tạo tại TP Hồ Chí Minh</h3>
+            <p>Đường Man Thiện, P. Hiệp Phú, Q.9 TP Hồ Chí Minh</p>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright container-fluid">
+        &copy; Copyright 2024 HocVienCongNgheBuuChinhVienThong, All rights
+        reserved.
+      </div>
+    </div>
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">
+      ▲
+    </button>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
